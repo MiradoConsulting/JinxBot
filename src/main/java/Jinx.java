@@ -1,4 +1,5 @@
 
+import robocode.HitRobotEvent;
 import robocode.HitWallEvent;
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
@@ -34,5 +35,12 @@ public class Jinx extends Robot {
     @Override
     public void onHitWall(HitWallEvent event) {
         turnLeft(45);
+    }
+
+    @Override
+    public void onHitRobot(HitRobotEvent event) {
+        double gunHeading = getGunHeading();
+        turnGunLeft(gunHeading);
+        fire(10);
     }
 }
