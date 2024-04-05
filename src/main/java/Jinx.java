@@ -11,6 +11,7 @@ public class Jinx extends Robot {
     public void run() {
         setAllColors(Color.cyan);
         setGunColor(Color.MAGENTA);
+        setRadarColor(Color.MAGENTA);
         while(true) {
             back(100);
             turnGunLeft(180);
