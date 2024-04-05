@@ -7,6 +7,7 @@ public class Jinx extends Robot {
 
     public void run() {
         while(true) {
+            back(50);
             turnRadarLeft(360);
             turnLeft(5);
             ahead(100);
@@ -21,19 +22,14 @@ public class Jinx extends Robot {
         double diff = bearing - gunHeading;
         turnGunLeft(diff);
         fire(1);
-        turnGunRight(1);
+        turnGunLeft(1);
         fire(1);
-        turnGunRight(1);
+        turnGunRight(2);
         fire(1);
-        turnGunRight(1);
-        fire(1);
-        turnGunRight(1);
-        fire(1);
-        turnGunRight(1);
     }
 
     @Override
     public void onHitWall(HitWallEvent event) {
-        turnLeft(10);
+        turnLeft(45);
     }
 }
