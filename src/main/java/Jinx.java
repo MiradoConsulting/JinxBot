@@ -15,10 +15,10 @@ public class Jinx extends Robot {
         while(true) {
             back(100);
             turnGunLeft(180);
-            turnLeft(10);
+            turnLeft(15);
             ahead(300);
             turnGunLeft(180);
-            turnLeft(10);
+            turnLeft(15);
         }
     }
 
