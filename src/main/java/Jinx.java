@@ -11,10 +11,12 @@ public class Jinx extends Robot {
     public void run() {
         setAllColors(Color.cyan);
         while(true) {
-            back(50);
+            back(100);
             turnGunLeft(180);
-            turnLeft(5);
-            ahead(100);
+            turnLeft(10);
+            ahead(300);
+            turnGunLeft(180);
+            turnLeft(10);
         }
     }
 
