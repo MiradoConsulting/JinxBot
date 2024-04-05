@@ -1,4 +1,3 @@
-package src.main.java;
 
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
