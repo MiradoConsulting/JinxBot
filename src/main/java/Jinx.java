@@ -24,7 +24,7 @@ public class Jinx extends Robot {
         double gunHeading = getGunHeading();
 
         double diff = bearing - gunHeading;
-        turnGunLeft(diff);
+        turnGunRight(diff);
         fire(1);
         turnGunLeft(1);
         fire(1);
