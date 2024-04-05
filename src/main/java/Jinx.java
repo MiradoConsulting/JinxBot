@@ -2,7 +2,7 @@
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
-public class JinxBot extends Robot {
+public class Jinx extends Robot {
 
     public void run() {
         while(true) {
