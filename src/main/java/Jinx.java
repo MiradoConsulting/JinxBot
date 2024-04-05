@@ -12,7 +12,7 @@ public class Jinx extends Robot {
         setAllColors(Color.cyan);
         while(true) {
             back(50);
-            turnRadarLeft(360);
+            turnGunLeft(180);
             turnLeft(5);
             ahead(100);
         }
@@ -20,16 +20,9 @@ public class Jinx extends Robot {
 
     @Override
     public void onScannedRobot(ScannedRobotEvent event) {
-        double bearing = event.getBearing();
-        double gunHeading = getGunHeading();
-
-        double diff = bearing - gunHeading;
-        turnGunRight(diff);
-        fire(1);
-        turnGunLeft(1);
-        fire(1);
-        turnGunRight(2);
-        fire(1);
+        if(getEnergy() > 1) {
+            fire(1);
+        }
     }
 
     @Override
